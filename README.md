@@ -40,7 +40,7 @@ library(glacieR)
 
 ---
 
-# Required packages
+## Required packages
 
 glacieR relies on the following R packages:
 
