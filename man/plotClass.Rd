@@ -19,7 +19,9 @@ plotClass(classification,
 Displays the classified raster.
 }
 \examples{
+\dontrun{
 plotClass(classification)
+}
 }
 \seealso{
 \code{\link{glacierClass}}
