@@ -16,9 +16,11 @@ glacierNDSI(img, green, swir)
 Returns a raster containing NDSI values.
 }
 \examples{
+\dontrun{
 ndsi <- glacierNDSI(img,
                     green=2,
                     swir=5)
+}
 }
 \seealso{
 \code{\link{plotNDSI}}
