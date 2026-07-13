@@ -1,9 +1,12 @@
 export(prepareGlacier)
 export(plotGlacierRGB)
+
 export(glacierNDSI)
 export(plotNDSI)
+
 export(glacierNDWI)
 export(plotNDWI)
+
 export(glacierClass)
 export(plotClass)
 
