@@ -1,15 +1,11 @@
-#################################################
-# Prepare images
-#################################################
+# Unsupervised classification
 
-prepareGlacier <- function(img, boundary){
+glacierClass <- function(img,
+                         nClasses = 3){
   
-  boundary <- terra::vect(boundary)
-  
-  img_crop <- crop(img, boundary)
-  
-  img_mask <- mask(img_crop, boundary)
-  
-  return(img_mask)
+  unsuperClass(
+    img,
+    nClasses = nClasses
+  )
   
 }
