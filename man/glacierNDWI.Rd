@@ -18,9 +18,11 @@ glacierNDWI(img,
 Returns a raster containing NDWI values.
 }
 \examples{
+\dontrun{
 ndwi <- glacierNDWI(img,
                     green=2,
                     nir=4)
+}
 }
 \seealso{
 \code{\link{plotNDWI}}
