@@ -17,7 +17,9 @@ plotGlacierRGB(img, r, g, b)
 Displays an RGB image.
 }
 \examples{
+\dontrun{
 plotGlacierRGB(img,3,2,1)
+}
 }
 \seealso{
 \code{\link[RStoolbox]{plotRGB}}
