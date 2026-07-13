@@ -2,9 +2,6 @@
 
 <p align="center"><img width="254" height="254" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
-<img width="254" height="254" alt="glacieR_logo2" src="https://github.com/user-attachments/assets/44cdc48d-5e63-49d3-b9a7-feb8a7d209d9" />
-
-
 ## Glacier Remote Sensing Analysis in R
 
 **glacieR** is an R package designed to simplify the preprocessing, visualization and analysis of glacier satellite imagery.
