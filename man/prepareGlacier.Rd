@@ -16,8 +16,10 @@ prepareGlacier(img, boundary)
 Returns a cropped and masked SpatRaster.
 }
 \examples{
+\dontrun{
 img <- rast("glacier.tif")
 prepareGlacier(img, "glacier_boundary.shp")
+}
 }
 \seealso{
 \code{\link[terra]{crop}},
