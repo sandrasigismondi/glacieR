@@ -18,6 +18,8 @@ plotNDWI(ndwi,
 Displays an NDWI map.
 }
 \examples{
+\dontrun{
 plotNDWI(ndwi)
+}
 }
 \keyword{plot}
