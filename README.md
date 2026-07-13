@@ -1,6 +1,6 @@
 # glacieR
 
-<p align="center"><img width="254" height="254" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
+<p align="center"><img width="454" height="454" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
 ## Glacier Remote Sensing Analysis in R
 
