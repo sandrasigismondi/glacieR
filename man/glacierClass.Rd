@@ -16,8 +16,10 @@ glacierClass(img,
 Returns an object produced by RStoolbox::unsuperClass().
 }
 \examples{
+\dontrun{
 classification <- glacierClass(img,
                                nClasses=3)
+}
 }
 \seealso{
 \code{\link{plotClass}}
