@@ -1,1 +1,16 @@
-
+Package: glacieR
+Type: Package
+Title: glacieR
+Version: 0.1.0
+Author: Sandra Sigismondi
+Maintainer: The package maintainer <sandra.sigismondi22@gmail.com>
+Description: Functions for preprocessing, visualization and unsupervised classification of glacier satellite imagery.
+Encoding: UTF-8
+Language: en-GB
+License: GPL(>=2)
+Depends: R (>= 4.0.0)
+Imports: terra,viridis,RStoolbox
+Suggests: knitr
+Config/testthat/edition: 3
+NeedsCompilation: no
+Packaged: 2026-07-26 11:06:03 UTC; sandrasigismondi
