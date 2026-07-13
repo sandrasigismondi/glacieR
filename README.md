@@ -1,42 +1,24 @@
 # glacieR
 
-<img width="254" height="254" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
+<p align="center"><img width="254" height="254" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
 <img width="254" height="254" alt="glacieR_logo2" src="https://github.com/user-attachments/assets/44cdc48d-5e63-49d3-b9a7-feb8a7d209d9" />
 
 
 ## Glacier Remote Sensing Analysis in R
 
-**glacieR** is an open-source R package designed to simplify the most common remote sensing workflows for glacier monitoring using multispectral satellite imagery.
+**glacieR** is an R package designed to simplify the preprocessing, visualization and analysis of glacier satellite imagery.
 
-The package provides simple and reusable functions for preprocessing glacier imagery, calculating spectral indices, visualizing RGB composites and performing unsupervised classifications.
+The package provides a collection of easy-to-use functions for common glacier remote sensing workflows, including:
 
----
-
-## 🌍 Why glacieR?
-
-Glaciers are among the most sensitive indicators of climate change.
-
-Monitoring their evolution through satellite imagery allows researchers to:
-
-- 🧊 map glacier extent
-- ❄️ distinguish clean ice, snow and debris-covered ice
-- 🌊 identify meltwater using spectral indices
-- 📈 analyse glacier changes through time
-- 🛰️ process data from different multispectral sensors
-
----
-
-## ✨ Main features
-
-The current version includes functions for:
-
-- 🗺️ Glacier clipping using vector boundaries
+- 🗻 Glacier masking and preprocessing
 - 🌈 RGB visualization
-- ❄️ NDSI computation
-- 💧 NDWI computation
-- 📊 Raster visualization
-- 🤖 Unsupervised image classification
+- ❄️ Snow and ice detection using **NDSI**
+- 💧 Surface water detection using **NDWI**
+- 🛰️ Unsupervised image classification
+- 📊 Visualization of glacier classification maps
+
+The package has been developed as part of a remote sensing project focused on monitoring glacier changes through multispectral satellite imagery.
 
 ---
 
@@ -58,35 +40,15 @@ library(glacieR)
 
 ---
 
-# 📊 Workflow
+# Required packages
 
-A typical workflow consists of:
+glacieR relies on the following R packages:
 
-```
-Satellite image
-        │
-        ▼
-prepareGlacier()
-        │
-        ▼
-plotGlacierRGB()
-        │
-        ├─────────────► glacierNDSI()
-        │                     │
-        │                     ▼
-        │               plotNDSI()
-        │
-        ├─────────────► glacierNDWI()
-        │                     │
-        │                     ▼
-        │               plotNDWI()
-        │
-        ▼
-glacierClass()
-        │
-        ▼
-plotClass()
-```
+- terra
+- RStoolbox
+- viridis
+
+These dependencies are installed automatically.
 
 ---
 
@@ -105,43 +67,43 @@ plotClass()
 
 ---
 
-## 💻 Example
+# Example workflow
 
 ```r
 library(glacieR)
 
+# Load a multispectral image
 img <- rast("glacier.tif")
 
-glacier <- prepareGlacier(
-  img,
-  "boundary.shp"
-)
+# Prepare image using glacier boundary
+img <- prepareGlacier(img, "boundary.shp")
 
-plotGlacierRGB(
-  glacier,
-  r = 3,
-  g = 2,
-  b = 1
-)
+# Visualize RGB composite
+plotGlacierRGB(img,
+               r = 3,
+               g = 2,
+               b = 1)
 
-ndsi <- glacierNDSI(
-  glacier,
-  green = 2,
-  swir = 5
-)
+# Compute NDSI
+ndsi <- glacierNDSI(img,
+                    green = 2,
+                    swir = 5)
 
 plotNDSI(ndsi)
+
+# Compute NDWI
+ndwi <- glacierNDWI(img,
+                    green = 2,
+                    nir = 4)
+
+plotNDWI(ndwi)
+
+# Unsupervised classification
+cl <- glacierClass(img,
+                   nClasses = 3)
+
+plotClass(cl)
 ```
-
----
-
-## 📖 Dependencies
-
-glacieR currently relies on:
-
-- terra
-- RStoolbox
-- viridis
 
 ---
 
