@@ -18,6 +18,8 @@ plotNDSI(ndsi,
 Displays an NDSI map.
 }
 \examples{
+\dontrun{
 plotNDSI(ndsi)
+}
 }
 \keyword{plot}
