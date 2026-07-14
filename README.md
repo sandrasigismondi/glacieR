@@ -59,7 +59,7 @@ glacieR/
 
 ---
 
-# Example workflow
+# 📌 Example workflow
 
 ```r
 library(terra)
@@ -106,10 +106,6 @@ Load the package:
 ```r
 library(glacieR)
 ```
-
----
-
-## Dependencies
 
 glacieR relies on the following R packages:
 
