@@ -2,7 +2,7 @@
 
 <p align="center"><img width="354" height="354" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
-Tools designed to simplify the preprocessing, visualization and analysis of glacier satellite imagery, including:
+R package designed to simplify monitoring glacier changes through multispectral satellite imagery. The tools reguard:
 
 - 🗻 Glacier image preprocessing
 - 🌈 RGB visualization
@@ -11,37 +11,8 @@ Tools designed to simplify the preprocessing, visualization and analysis of glac
 - 🛰️ Unsupervised image classification
 - 📊 Visualization of glacier classification maps
 
-The package has been developed as part of a remote sensing project focused on monitoring glacier changes through multispectral satellite imagery.
-
 ---
 
-## 📦 Installation
-
-Install directly from GitHub.
-
-```r
-install.packages("remotes")
-
-remotes::install_github("sandrasigismondi/glacieR")
-```
-
-Load the package:
-
-```r
-library(glacieR)
-```
-
----
-
-## Dependencies automatically installed
-
-glacieR relies on the following R packages:
-
-- terra
-- RStoolbox
-- viridis
-
----
 
 # 📚 Functions
 
@@ -95,6 +66,34 @@ cl <- glacierClass(img,
 
 plotClass(cl)
 ```
+
+---
+
+## 📦 Installation
+
+Install directly from GitHub.
+
+```r
+install.packages("remotes")
+
+remotes::install_github("sandrasigismondi/glacieR")
+```
+
+Load the package:
+
+```r
+library(glacieR)
+```
+
+---
+
+## Dependencies automatically installed
+
+glacieR relies on the following R packages:
+
+- terra
+- RStoolbox
+- viridis
 
 ---
 
