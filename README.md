@@ -1,8 +1,5 @@
 # glacieR
 
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Made with R](https://img.shields.io/badge/Made%20with-R-blue.svg)
-
 <p align="center"><img width="354" height="354" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
 An R package designed to simplify monitoring glacier changes through multispectral satellite imagery. It offers functions for educational purposes and reproducible glacier analyses, including:
