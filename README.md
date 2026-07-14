@@ -2,13 +2,9 @@
 
 <p align="center"><img width="354" height="354" alt="glacieR_logo" src="https://github.com/user-attachments/assets/f9e15aed-e81c-4156-9ea3-90b75071ed5c" />
 
-## Glacier Remote Sensing Analysis in R
+Tools designed to simplify the preprocessing, visualization and analysis of glacier satellite imagery, including:
 
-**glacieR** is an R package designed to simplify the preprocessing, visualization and analysis of glacier satellite imagery.
-
-The package provides a collection of easy-to-use functions for common glacier remote sensing workflows, including:
-
-- 🗻 Glacier masking and preprocessing
+- 🗻 Glacier image preprocessing
 - 🌈 RGB visualization
 - ❄️ Snow and ice detection using **NDSI**
 - 💧 Surface water detection using **NDWI**
@@ -37,15 +33,13 @@ library(glacieR)
 
 ---
 
-## Required packages
+## Dependencies automatically installed
 
 glacieR relies on the following R packages:
 
 - terra
 - RStoolbox
 - viridis
-
-These dependencies are installed automatically.
 
 ---
 
