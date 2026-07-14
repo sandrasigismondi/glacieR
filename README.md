@@ -9,7 +9,7 @@ An R package designed to simplify monitoring glacier changes through multispectr
 - ❄️ Snow and ice detection using **NDSI**
 - 💧 Surface water detection using **NDWI**
 - 🛰️ Unsupervised image classification
-- 📊 Visualization of glacier classification maps
+- 📊 Visualization of classification maps
 
 ---
 
