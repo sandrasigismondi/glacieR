@@ -17,29 +17,30 @@ An R package designed to simplify monitoring glacier changes through multispectr
 
 ```text
 glacieR/
+│
 ├── R/
-│   ├── prepareGlacier.R
-│   ├── plotGlacierRGB.R
-│   ├── glacierNDSI.R
-│   ├── plotNDSI.R
-│   ├── glacierNDWI.R
-│   ├── plotNDWI.R
 │   ├── glacierClass.R
-│   └── plotClass.R
+│   ├── glacierNDSI.R
+│   ├── glacierNDWI.R
+│   ├── plotClass.R
+│   ├── plotGlacierRGB.R
+│   ├── plotNDSI.R
+│   ├── plotNDWI.R
+│   └── prepareGlacier.R
 │
 ├── man/
-│   ├── prepareGlacier.Rd
-│   ├── plotGlacierRGB.Rd
-│   ├── glacierNDSI.Rd
-│   ├── plotNDSI.Rd
-│   ├── glacierNDWI.Rd
-│   ├── plotNDWI.Rd
 │   ├── glacierClass.Rd
-│   └── plotClass.Rd
+│   ├── glacierNDSI.Rd
+│   ├── glacierNDWI.Rd
+│   ├── plotClass.Rd
+│   ├── plotGlacierRGB.Rd
+│   ├── plotNDSI.Rd
+│   ├── plotNDWI.Rd
+│   └── prepareGlacier.Rd
 │
 ├── DESCRIPTION
 ├── NAMESPACE
-├── README.md
+└── README.md
 ```
 
 ---
