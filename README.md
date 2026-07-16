@@ -139,5 +139,3 @@ help(package = "glacieR")
 **Sandra Sigismondi**
 
 Master's Degree in Sciences and Management of Nature - University of Bologna
-
----
