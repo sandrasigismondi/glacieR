@@ -1,7 +1,7 @@
 # Plot unsupervised classification
 
 plotClass <- function(classification,
-                      colors = viridis(4,
+                      colors = viridis(max(values(classification$map), na.rm = TRUE),
                                        option = "E"),
                       title = "Classification"){
   
