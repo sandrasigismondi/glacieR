@@ -13,7 +13,7 @@ An R package designed to simplify monitoring glacier changes through multispectr
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository structure
 
 ```text
 glacieR/
@@ -116,7 +116,7 @@ glacieR relies on the following R packages:
 
 ---
 
-## ❓ Getting Help
+## ❓ Getting help
 
 Use the R documentation for individual functions:
 
