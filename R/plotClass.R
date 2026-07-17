@@ -1,14 +1,20 @@
 # Plot unsupervised classification
 
 plotClass <- function(classification,
-                      colors = viridis(max(values(classification$map), na.rm = TRUE),
-                                       option = "E"),
+                      colors = NULL,
                       title = "Classification"){
-  
-  plot(
-    classification$map,
-    col = colors,
-    main = title
-  )
-  
+
+  if(inherits(classification, "RStoolbox_unsuperClass")){
+    img <- classification$map
+  } else {
+    img <- classification
+  }
+
+  if(is.null(colors)){
+    colors <- viridis(max(values(img), na.rm = TRUE), option = "E")
+  }
+
+  plot(img,
+       col = colors,
+       main = title)
 }
